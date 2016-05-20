@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Prodotti - Software Workers srl</title>
+    <title>Contatti - Software Workers srl</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,16 +10,16 @@
 
     <link href="/SW.ico" rel="icon">
 
-<link rel="canonical" href="/prodotti">
+<link rel="canonical" href="/pages/contatti.html">
 
         <meta name="author" content="Software Workers srl" />
-        <meta name="description" content="Software Workers Srl è attiva nei servizi utili allo studio professionale e alla piccola-media impresa italiana. Il nostro core business sono i servizi avanzati che aumentino il valore aggiunto dei nostri clienti. Offriamo soluzioni su misura quali: sviluppo di siti web, statici e dinamici gestione avanzata delle email backup, gestione ..." />
+        <meta name="description" content="Grazie per esserti messo in contatto noi! Sono stati comunicati i seguenti dati: Nuovo messaggio Purtroppo il modulo di contatto è al momento disattivato! Ci scusiamo per l&#39;inconveniente... Nome Email Telefono Commento Invia $(&#39;#input-form&#39;).one(&#39;submit&#39;,function(){ var name = encodeURIComponent($(&#39;#contact-name&#39;).val()); var email = encodeURIComponent($(&#39;#contact-email&#39;).val()); var phone ..." />
 
     <meta property="og:site_name" content="Software Workers srl" />
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Prodotti"/>
-    <meta property="og:url" content="/prodotti"/>
-    <meta property="og:description" content="Software Workers Srl è attiva nei servizi utili allo studio professionale e alla piccola-media impresa italiana. Il nostro core business sono i servizi avanzati che aumentino il valore aggiunto dei nostri clienti. Offriamo soluzioni su misura quali: sviluppo di siti web, statici e dinamici gestione avanzata delle email backup, gestione ..." />
+    <meta property="og:title" content="Contatti"/>
+    <meta property="og:url" content="/pages/contatti.html"/>
+    <meta property="og:description" content="Grazie per esserti messo in contatto noi! Sono stati comunicati i seguenti dati: Nuovo messaggio Purtroppo il modulo di contatto è al momento disattivato! Ci scusiamo per l&#39;inconveniente... Nome Email Telefono Commento Invia $(&#39;#input-form&#39;).one(&#39;submit&#39;,function(){ var name = encodeURIComponent($(&#39;#contact-name&#39;).val()); var email = encodeURIComponent($(&#39;#contact-email&#39;).val()); var phone ..." />
 
 
     <!-- Bootstrap -->
@@ -53,13 +53,13 @@
                     <li><a href="/#blog">Blog</a></li>
                     <li><a href="https://assistenza.softwareworkers.it/">Assistenza</a></li>
                     <li><a href="https://wiki.softwareworkers.it/">Wiki</a></li>
-                         <li><a href="/chi-siamo">
+                         <li><a href="/pages/chi-siamo.html">
                              Chi siamo
                           </a></li>
-                         <li><a href="/contatti">
+                         <li class="active"><a href="/pages/contatti.html">
                              Contatti
                           </a></li>
-                         <li class="active"><a href="/prodotti">
+                         <li><a href="/pages/prodotti.html">
                              Prodotti
                           </a></li>
             </ul>
@@ -77,21 +77,80 @@
         <div class="col-sm-9">
     <ol class="breadcrumb">
         <li><a href="" title="Software Workers srl"><i class="fa fa-home fa-lg"></i></a></li>
-        <li class="active">Prodotti</li>
+        <li class="active">Contatti</li>
     </ol>
     <section id="content" class="body">
-        <h1 class="entry-title">Prodotti</h1>
+        <h1 class="entry-title">Contatti</h1>
         
         <div class="entry-content">
-            <p><strong>Software Workers Srl</strong> è attiva nei servizi utili allo studio professionale e alla piccola-media impresa italiana. Il nostro core business sono i servizi avanzati che aumentino il valore aggiunto dei nostri clienti.</p>
-<p>Offriamo soluzioni su misura quali:</p>
-<ul>
-<li>sviluppo di siti web, statici e dinamici</li>
-<li>gestione avanzata delle email</li>
-<li>backup, gestione e condivisione di file e contenuti multimediali</li>
-<li>sicurezza informatica di client e reti</li>
-<li>VoIP e servizi telefonici avanzati</li>
-</ul>
+            <p id="message-form-sent" class="hidden">Grazie per esserti messo in contatto noi!</p>
+<!-------- Feedbacks --------!>
+<div id="feedbacks" class="hidden">
+  <p>Sono stati comunicati i seguenti dati:<p>
+  <ul id="mydatas">
+  </ul>
+  <button type="button" class="btn btn-success">Nuovo messaggio</button>
+</div>
+<!-------- /Feedbacks --------!>
+<div id="notsent" class="hidden">
+  <p>Purtroppo <font color="red"><u>il modulo di contatto</u> è al momento <strong>disattivato!</strong></font></p>
+  <p>Ci scusiamo per l'inconveniente...</p>
+</div>
+<form id="input-form" action="" method="POST" style="width:70%" target="no-target">
+  <div class="form-group">
+    <label for="contact-name">Nome</label>
+    <input type="text" class="form-control" id="contact-name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-email">Email</label>
+    <input type="email" class="form-control" id="contact-email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-phone">Telefono</label>
+    <input type="phone" class="form-control" id="contact-phone">
+  </div>
+  <div class="form-group">
+    <label for="contact-comment">Commento</label>
+    <textarea id="contact-comment" class="form-control" rows="4"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Invia</button>
+</form>
+
+<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Bootstrap  JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+$('#input-form').one('submit',function(){
+  var name = encodeURIComponent($('#contact-name').val());
+  var email = encodeURIComponent($('#contact-email').val());
+  var phone = encodeURIComponent($('#contact-phone').val());
+  var comment = encodeURIComponent($('#contact-comment').val());
+  var baseURL = 'https://docs.google.com/forms/d/1M89dZ9Wa2uiJK8eKEcCLQvN6XQkVZWahol8xC0R7KQ8/formResponse?';
+  var submitRef = '&submit=Submit';
+  var submitURL = (baseURL + 'entry.1587071457=' + name + "&" + 'entry.145218064=' + email + "&" + 'entry.1202235962=' + phone + "&" +'entry.2130271524=' + comment +"&" + submitRef);
+  console.log(submitURL);
+  $(this)[0].action=submitURL;
+  messageOK(name, email, phone, comment);
+  });
+    function messageKO(){
+      $('#notsent').removeClass('hidden');
+    };
+    function messageOK(name, email, phone, comment){
+      $('#message-form-sent').removeClass('hidden');
+      $('#feedbacks').removeClass('hidden');
+      $('#input-form').addClass('hidden');
+      $('#mydatas').append($("<li>").text("Nome: " + decodeURIComponent(name)));
+      $('#mydatas').append($("<li>").text("Email: "+ decodeURIComponent(email)));
+      $('#mydatas').append($("<li>").text("Telefono: " + phone));
+      $('#mydatas').append($("<li>").text("Commento: " + comment));
+    };
+    $('#feedbacks').click(function(){
+      location.reload();
+    });
+</script>
         </div>
     </section>
         </div>
@@ -115,12 +174,12 @@
     <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
       <ul class="list-group" id="links">
         <li class="list-group-item">
-            <a href="/sede-milano" target="_blank">
+            <a href="/pages/sede-milano.html" target="_blank">
                 Sede operativa di Milano
             </a>
         </li>
         <li class="list-group-item">
-            <a href="/sede-torino" target="_blank">
+            <a href="/pages/sede-torino.html" target="_blank">
                 Sede operativa di Torino
             </a>
         </li>
