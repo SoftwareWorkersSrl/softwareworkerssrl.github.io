@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Contatti - Software Workers srl</title>
+    <title>static site generator - Software Workers srl</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,16 +10,16 @@
 
     <link href="/SW.ico" rel="icon">
 
-<link rel="canonical" href="/pages/contatti.html">
 
-        <meta name="author" content="Software Workers srl" />
-        <meta name="description" content="Grazie per esserti messo in contatto noi! Sono stati comunicati i seguenti dati: Nuovo messaggio Purtroppo il modulo di contatto è al momento disattivato! Ci scusiamo per l&#39;inconveniente... Nome Email Telefono Commento Invia $(&#39;#input-form&#39;).one(&#39;submit&#39;,function(){ var name = encodeURIComponent($(&#39;#contact-name&#39;).val()); var email = encodeURIComponent($(&#39;#contact-email&#39;).val()); var phone ..." />
+    <meta name="author" content="Software Workers srl" />
+    <meta name="keywords" content="static site generator" />
 
-    <meta property="og:site_name" content="Software Workers srl" />
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Contatti"/>
-    <meta property="og:url" content="/pages/contatti.html"/>
-    <meta property="og:description" content="Grazie per esserti messo in contatto noi! Sono stati comunicati i seguenti dati: Nuovo messaggio Purtroppo il modulo di contatto è al momento disattivato! Ci scusiamo per l&#39;inconveniente... Nome Email Telefono Commento Invia $(&#39;#input-form&#39;).one(&#39;submit&#39;,function(){ var name = encodeURIComponent($(&#39;#contact-name&#39;).val()); var email = encodeURIComponent($(&#39;#contact-email&#39;).val()); var phone ..." />
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Software Workers srl" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Software Workers srl"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="Software Workers srl"/>
 
 
     <!-- Bootstrap -->
@@ -53,13 +53,13 @@
                     <li><a href="/#blog">Blog</a></li>
                     <li><a href="https://assistenza.softwareworkers.it/">Assistenza</a></li>
                     <li><a href="https://wiki.softwareworkers.it/">Wiki</a></li>
-                         <li><a href="/pages/chi-siamo.html">
+                         <li><a href="/chi-siamo">
                              Chi siamo
                           </a></li>
-                         <li class="active"><a href="/pages/contatti.html">
+                         <li><a href="/contatti">
                              Contatti
                           </a></li>
-                         <li><a href="/pages/prodotti.html">
+                         <li><a href="/prodotti">
                              Prodotti
                           </a></li>
             </ul>
@@ -77,82 +77,45 @@
         <div class="col-sm-9">
     <ol class="breadcrumb">
         <li><a href="" title="Software Workers srl"><i class="fa fa-home fa-lg"></i></a></li>
-        <li class="active">Contatti</li>
+        <li><a href="/" title="Tags">Tags</a></li>
+        <li class="active">static site generator</li>
     </ol>
-    <section id="content" class="body">
-        <h1 class="entry-title">Contatti</h1>
-        
-        <div class="entry-content">
-            <p id="message-form-sent" class="hidden">Grazie per esserti messo in contatto noi!</p>
-<!-------- Feedbacks --------!>
-<div id="feedbacks" class="hidden">
-  <p>Sono stati comunicati i seguenti dati:<p>
-  <ul id="mydatas">
-  </ul>
-  <button type="button" class="btn btn-success">Nuovo messaggio</button>
-</div>
-<!-------- /Feedbacks --------!>
-<div id="notsent" class="hidden">
-  <p>Purtroppo <font color="red"><u>il modulo di contatto</u> è al momento <strong>disattivato!</strong></font></p>
-  <p>Ci scusiamo per l'inconveniente...</p>
-</div>
-<form id="input-form" action="" method="POST" style="width:70%" target="no-target">
-  <div class="form-group">
-    <label for="contact-name">Nome</label>
-    <input type="text" class="form-control" id="contact-name" required>
-  </div>
-  <div class="form-group">
-    <label for="contact-email">Email</label>
-    <input type="email" class="form-control" id="contact-email" required>
-  </div>
-  <div class="form-group">
-    <label for="contact-phone">Telefono</label>
-    <input type="phone" class="form-control" id="contact-phone">
-  </div>
-  <div class="form-group">
-    <label for="contact-comment">Commento</label>
-    <textarea id="contact-comment" class="form-control" rows="4"></textarea>
-  </div>
-  <button type="submit" class="btn btn-success">Invia</button>
-</form>
+    <a name="blog"></a>
+            <article>
+                <h2><a href="/Pelican_Openlabs">Pelican, static site generator</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-05-16T22:30:00+02:00"> Mon 16 May 2016</time>
+    </span>
 
-<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Bootstrap  JS-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script>
-$('#input-form').one('submit',function(){
-  var name = encodeURIComponent($('#contact-name').val());
-  var email = encodeURIComponent($('#contact-email').val());
-  var phone = encodeURIComponent($('#contact-phone').val());
-  var comment = encodeURIComponent($('#contact-comment').val());
-  var baseURL = 'https://docs.google.com/forms/d/1M89dZ9Wa2uiJK8eKEcCLQvN6XQkVZWahol8xC0R7KQ8/formResponse?';
-  var submitRef = '&submit=Submit';
-  var submitURL = (baseURL + 'entry.1587071457=' + name + "&" + 'entry.145218064=' + email + "&" + 'entry.1202235962=' + phone + "&" +'entry.2130271524=' + comment +"&" + submitRef);
-  console.log(submitURL);
-  $(this)[0].action=submitURL;
-  messageOK(name, email, phone, comment);
-  });
-    function messageKO(){
-      $('#notsent').removeClass('hidden');
-    };
-    function messageOK(name, email, phone, comment){
-      $('#message-form-sent').removeClass('hidden');
-      $('#feedbacks').removeClass('hidden');
-      $('#input-form').addClass('hidden');
-      $('#mydatas').append($("<li>").text("Nome: " + decodeURIComponent(name)));
-      $('#mydatas').append($("<li>").text("Email: "+ decodeURIComponent(email)));
-      $('#mydatas').append($("<li>").text("Telefono: " + phone));
-      $('#mydatas').append($("<li>").text("Commento: " + comment));
-    };
-    $('#feedbacks').click(function(){
-      location.reload();
-    });
-</script>
-        </div>
-    </section>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/Pelican">Pelican</a>
+        /
+	<a href="/tag/webdesign">webdesign</a>
+        /
+	<a href="/tag/static site generator">static site generator</a>
+        /
+	<a href="/tag/Python">Python</a>
+        /
+	<a href="/tag/Openlabs">Openlabs</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><!-- summary: Pelican, static site generator. -->
+<!-- slug: Pelican-static-site-generator -->
+<p>Stasera grazie all'evento organizzato da <a class="reference external" href="http://www.openlabs.it/attivita/pelican-siti-statici-ma-non-troppo">Openlabs</a> abbiamo presentato <strong>Pelican</strong>, un moderno <em>static site generator</em> scritto in Python.</p>
+<p>Per lo sviluppo sul web utilizziamo una molteplicità di strumenti, scegliendo di volta in volta quello più adatto allo specifico compito.
+Negli ultimi tempi i generatori di siti statici, soprattutto per le ...</p></!--></!-->
+                    <a class="btn btn-default btn-xs" href="/Pelican_Openlabs">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
