@@ -70,8 +70,8 @@
                          <li><a href="/pages/contatti.html">
                              Contatti
                           </a></li>
-                         <li><a href="/pages/prodotti.html">
-                             Prodotti
+                         <li><a href="/pages/servizi.html">
+                             Servizi
                           </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -136,12 +136,12 @@
 <p>Dopo l'articolo introduttivo continuiamo la serie dedicata al contrasto dello spam con l'esame dei metodi di autenticazione dell'email (stiamo parlando anzitutto dell'email che spediamo noi, ma questo ci aiuterà anche a impostare la gestione delle email ricevute).</p>
 <p>Cominciamo con una definizione:</p>
 <p><strong>Email spoofing</strong>: invio di email con indirizzo del mittente contraffatto</p>
-<p>Facciamo un esempio: Alice riceve un'email da Bob (useremo <a class="reference external" href="https://it.wikipedia.org/wiki/Alice_e_Bob">nomi crittografici</a>)
-Poiché Alice ha sentito parlare del rischio di email spoofing, ha il dubbio che l'email possa provenire in realtà da Mallory.
-Chiede pertanto ad Bob di autenticare le email, in modo da potersi fidare e scaricare gli allegati, senza rischio di aprire le porte a malware di ogni tipo (per esempio i temibili <em>ransomware</em>).</p>
+<p>Facciamo un esempio: Alice invia un'email a Bob (useremo <a class="reference external" href="https://it.wikipedia.org/wiki/Alice_e_Bob">nomi crittografici</a>)
+Poiché Bob ha sentito parlare del rischio di email spoofing, ha il dubbio che l'email possa provenire in realtà da Mallory.
+Chiede pertanto ad Alice di autenticare le email, in modo da potersi fidare e scaricare gli allegati, senza rischio di aprire le porte a malware di ogni tipo (per esempio i temibili <em>ransomware</em>).</p>
 <p>Alice si documenta, e scopre che i due metodi di autenticazione principali sono <a class="reference external" href="http://www.dkim.org">DKIM</a> e <a class="reference external" href="http://www.openspf.org">SPF</a>.
 Si tratta di metodi autonomi l'uno dall'altro, non alternativi; anzi, se possibile è meglio implementarli entrambi.
-L'implementazione dipende strettamente dal fornitore di hosting del dominio di posta (OVH, Seeweb, Aruba, ...) e dal tipo di servizio acquistato dal fornitore (housing, hosting virtuale, servizio email ...).
+L'implementazione dipende strettamente dal fornitore di hosting del dominio di posta (Aruba, Seeweb, <a class="reference external" href="https://partners.ovh.com/partner/56deba9380ec545a24bc4f12">OVH</a> ...) e dal tipo di servizio acquistato dal fornitore (housing, hosting virtuale, servizio email ...).
 In alcuni casi si ha a disposizione un pannello di controllo grafico con procedure guidate, in altri casi si deve modificare un file di configurazione inserendo righe di testo con comandi astrusi, in altri casi ancora è necessario aprire un ticket perché l'operazione viene svolta solo dai tecnici dell'help desk (infine c'è anche la possibilità che il piano di hosting non consenta questa autenticazione, ma in questo caso meglio cambiare piano di hosting, o fornitore).</p>
 <p>Alice scopre anche che l'attivazione di SPF e DKIM è un presupposto per gestire le problematiche di autenticazione dell'email tramite il sistema <a class="reference external" href="https://dmarc.org/">DMARC</a>.
 È un approccio relativamente recente, ancora poco noto ma assai promettente.</p>
