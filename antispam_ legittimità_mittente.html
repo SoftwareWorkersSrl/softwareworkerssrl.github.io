@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pelican, static site generator - Software Workers srl</title>
+    <title>Prevenzione dell'email spoofing tramite verifica della legittimità del mittente - Software Workers srl</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,24 +10,26 @@
 
     <link href="/SW.ico" rel="icon">
 
-<link rel="canonical" href="/pelican-openlabs">
+<link rel="canonical" href="/antispam_ legittimità_mittente">
 
         <meta name="author" content="Andrea Rossi" />
-        <meta name="keywords" content="Pelican,webdesign,static site generator,Python,Openlabs" />
-        <meta name="description" content="Stasera grazie all&#39;evento organizzato da Openlabs abbiamo presentato Pelican, un moderno static site generator scritto in Python. Per lo sviluppo sul web utilizziamo una molteplicità di strumenti, scegliendo di volta in volta quello più adatto allo specifico compito. Negli ultimi tempi i generatori di siti statici, soprattutto per le ..." />
+        <meta name="keywords" content="spam,email,sicurezza,spoofing,DMARC,SPF,DKIM" />
+        <meta name="description" content="Dopo l&#39;articolo introduttivo continuiamo la serie dedicata al contrasto dello spam con l&#39;esame dei metodi di autenticazione dell&#39;email (stiamo parlando anzitutto dell&#39;email che spediamo noi, ma questo ci aiuterà anche a impostare la gestione delle email ricevute). Cominciamo con una definizione: Email spoofing: invio di email ..." />
 
         <meta property="og:site_name" content="Software Workers srl" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Pelican, static site generator"/>
-        <meta property="og:url" content="/pelican-openlabs"/>
-        <meta property="og:description" content="Stasera grazie all&#39;evento organizzato da Openlabs abbiamo presentato Pelican, un moderno static site generator scritto in Python. Per lo sviluppo sul web utilizziamo una molteplicità di strumenti, scegliendo di volta in volta quello più adatto allo specifico compito. Negli ultimi tempi i generatori di siti statici, soprattutto per le ..."/>
-        <meta property="article:published_time" content="2016-05-16" />
+        <meta property="og:title" content="Prevenzione dell&#39;email spoofing tramite verifica della legittimità del mittente"/>
+        <meta property="og:url" content="/antispam_ legittimità_mittente"/>
+        <meta property="og:description" content="Dopo l&#39;articolo introduttivo continuiamo la serie dedicata al contrasto dello spam con l&#39;esame dei metodi di autenticazione dell&#39;email (stiamo parlando anzitutto dell&#39;email che spediamo noi, ma questo ci aiuterà anche a impostare la gestione delle email ricevute). Cominciamo con una definizione: Email spoofing: invio di email ..."/>
+        <meta property="article:published_time" content="2016-05-20" />
             <meta property="article:section" content="tecnologia" />
-            <meta property="article:tag" content="Pelican" />
-            <meta property="article:tag" content="webdesign" />
-            <meta property="article:tag" content="static site generator" />
-            <meta property="article:tag" content="Python" />
-            <meta property="article:tag" content="Openlabs" />
+            <meta property="article:tag" content="spam" />
+            <meta property="article:tag" content="email" />
+            <meta property="article:tag" content="sicurezza" />
+            <meta property="article:tag" content="spoofing" />
+            <meta property="article:tag" content="DMARC" />
+            <meta property="article:tag" content="SPF" />
+            <meta property="article:tag" content="DKIM" />
             <meta property="article:author" content="Andrea Rossi" />
 
 
@@ -86,16 +88,16 @@
         <div class="col-sm-9">
             <ol class="breadcrumb">
                 <li><a href="" title="Software Workers srl"><i class="fa fa-home fa-lg"></i></a></li>
-                <li class="active">Pelican, static site generator</li>
+                <li class="active">Prevenzione dell'email spoofing tramite verifica della legittimità del mittente</li>
             </ol>
     <section id="content">
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/pelican-openlabs"
+                    <a href="/antispam_ legittimità_mittente"
                        rel="bookmark"
-                       title="Permalink to Pelican, static site generator">
-                        Pelican, static site generator
+                       title="Permalink to Prevenzione dell'email spoofing tramite verifica della legittimità del mittente">
+                        Prevenzione dell'email spoofing tramite verifica della legittimità del mittente
                     </a>
                 </h1>
             </header>
@@ -105,7 +107,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-16T22:30:00+02:00"> Mon 16 May 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-05-20T12:30:00+02:00"> Fri 20 May 2016</time>
     </span>
 
 
@@ -113,25 +115,38 @@
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/Pelican">Pelican</a>
+	<a href="/tag/spam">spam</a>
         /
-	<a href="/tag/webdesign">webdesign</a>
+	<a href="/tag/email">email</a>
         /
-	<a href="/tag/static site generator">static site generator</a>
+	<a href="/tag/sicurezza">sicurezza</a>
         /
-	<a href="/tag/Python">Python</a>
+	<a href="/tag/spoofing">spoofing</a>
         /
-	<a href="/tag/Openlabs">Openlabs</a>
+	<a href="/tag/DMARC">DMARC</a>
+        /
+	<a href="/tag/SPF">SPF</a>
+        /
+	<a href="/tag/DKIM">DKIM</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <!-- summary: Pelican, static site generator. -->
-<!-- slug: Pelican-static-site-generator -->
-<p>Stasera grazie all'evento organizzato da <a class="reference external" href="http://www.openlabs.it/attivita/pelican-siti-statici-ma-non-troppo">Openlabs</a> abbiamo presentato <strong>Pelican</strong>, un moderno <em>static site generator</em> scritto in Python.</p>
-<p>Per lo sviluppo sul web utilizziamo una molteplicità di strumenti, scegliendo di volta in volta quello più adatto allo specifico compito.
-Negli ultimi tempi i generatori di siti statici, soprattutto per le considerazioni legate alla sicurezza, hanno guadagnato molto dello spazio prima riservato a CMS come Worpress, Joomla! o Drupal (che peraltro rimangono indispensabili in alcune specifiche circostanze).
-Nonostante l'aggettivo <em>static</em> i siti - grazie alle funzionalità introdotte da HTML5, CSS3 e Javascript - sono in realtà pienamente interattivi e rispondono alle interrogazioni dell'utente.</p>
-<p>Questo stesso sito è realizzato in Pelican.</p>
+                <!-- summary: Prevenzione dell'email spoofing tramite verifica della legittimità del mittente. -->
+<!-- slug: antispam-autenticazione-DMARC-SPF-DKIM -->
+<p>Dopo l'articolo introduttivo continuiamo la serie dedicata al contrasto dello spam con l'esame dei metodi di autenticazione dell'email (stiamo parlando anzitutto dell'email che spediamo noi, ma questo ci aiuterà anche a impostare la gestione delle email ricevute).</p>
+<p>Cominciamo con una definizione:</p>
+<p><strong>Email spoofing</strong>: invio di email con indirizzo del mittente contraffatto</p>
+<p>Facciamo un esempio: Alice invia un'email a Bob (useremo <a class="reference external" href="https://it.wikipedia.org/wiki/Alice_e_Bob">nomi crittografici</a>)
+Poiché Bob ha sentito parlare del rischio di email spoofing, ha il dubbio che l'email possa provenire in realtà da Mallory.
+Chiede pertanto ad Alice di autenticare le email, in modo da potersi fidare e scaricare gli allegati, senza rischio di aprire le porte a malware di ogni tipo (per esempio i temibili <em>ransomware</em>).</p>
+<p>Alice si documenta, e scopre che i due metodi di autenticazione principali sono <a class="reference external" href="http://www.dkim.org">DKIM</a> e <a class="reference external" href="http://www.openspf.org">SPF</a>.
+Si tratta di metodi autonomi l'uno dall'altro, non alternativi; anzi, se possibile è meglio implementarli entrambi.
+L'implementazione dipende strettamente dal fornitore di hosting del dominio di posta (Aruba, Seeweb, <a class="reference external" href="https://partners.ovh.com/partner/56deba9380ec545a24bc4f12">OVH</a> ...) e dal tipo di servizio acquistato dal fornitore (housing, hosting virtuale, servizio email ...).
+In alcuni casi si ha a disposizione un pannello di controllo grafico con procedure guidate, in altri casi si deve modificare un file di configurazione inserendo righe di testo con comandi astrusi, in altri casi ancora è necessario aprire un ticket perché l'operazione viene svolta solo dai tecnici dell'help desk (infine c'è anche la possibilità che il piano di hosting non consenta questa autenticazione, ma in questo caso meglio cambiare piano di hosting, o fornitore).</p>
+<p>Alice scopre anche che l'attivazione di SPF e DKIM è un presupposto per gestire le problematiche di autenticazione dell'email tramite il sistema <a class="reference external" href="https://dmarc.org/">DMARC</a>.
+È un approccio relativamente recente, ancora poco noto ma assai promettente.</p>
+<p>A questo punto Alice attiva tutte le autenticazioni, e informa Bob che può impostare il proprio filtro antispam in modo tale da segnalare come sospette le email prive di autenticazione.</p>
+<p>Questo è solo un esempio di caso d'uso: nei prossimi articoli esamineremo i dettagli tecnici.</p>
 
             </div>
             <!-- /.entry-content -->
