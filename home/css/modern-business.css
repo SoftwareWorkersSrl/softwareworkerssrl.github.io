@@ -34,7 +34,14 @@ body {
     min-height: 70px;
 }
 .navbar-inverse .navbar-brand {
+    padding-top: 10px;
     color: #d1d1d1;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+      margin-right: 0px;
+  }
 }
 
 /* Home Page Carousel */
