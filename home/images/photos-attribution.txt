@@ -1,0 +1,4 @@
+snail.jpg: https://www.flickr.com/photos/daniela_naturephotography/15002962332/
+fireworks.jpg: https://www.flickr.com/photos/jdmoar/14692727871/
+servers.jpg: https://www.flickr.com/photos/djandywdotcom/31474966265/
+baloon.jpg: https://www.flickr.com/photos/jfrenaud/6860527459/
