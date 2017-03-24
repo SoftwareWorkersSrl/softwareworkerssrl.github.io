@@ -1,0 +1,222 @@
+/*!
+ * Software Workers srl
+ * inspired by Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2016-2017 Software Workers
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    padding-bottom: 10px;
+    min-height: 70px;
+}
+.navbar-inverse .navbar-brand {
+    padding-top: 10px;
+    color: #d1d1d1;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+      margin-right: 0px;
+  }
+}
+
+/* TOP BAR and LOGO */
+.navbar-brand > img {
+    display: inline;
+}
+
+/* BANNER */
+#banner {
+    background-attachment: fixed;
+    padding: 10% 0px;
+    display: block;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 100%;
+    max-height: 600px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Special set for carousel text
+ * options:
+ *   top-left
+ *   center
+ *   top
+*/
+.carousel-caption>h2 {
+    font-size: 40px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+}
+.carousel-caption>p {
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+}
+/* top-left */
+.carousel-caption.top-left {
+    left: 0%;
+    top: 10%;
+    right: 65%;
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption.top-left {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-caption.top-left {
+    right: 10%;
+    left: 10%;
+  }
+}
+/* center */
+.carousel-caption.center {
+    left: 30%;
+    top: 40%;
+    right: 30%;
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption.center {
+    left: 20%;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-caption.center {
+    right: 10%;
+    left: 10%;
+  }
+}
+/* top */
+.carousel-caption.top {
+    left: 30%;
+    top: 20%;
+    right: 30%;
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption.top {
+    top: 10%;
+    left: 20%;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-caption.top {
+    top: 5%;
+    right: 10%;
+    left: 10%;
+  }
+}
+
+/* ServiziOfferti */
+.service-box {
+    margin-bottom: 1em;
+}
+
+
+/* For list of services on homepage */
+h1.page-header {
+    text-align: center;
+    border: none;
+}
+
+hr.primary {
+    border-width: 3px;
+    max-width: 70px;
+    border-color: #F05F40;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+
+/* post infos */
+footer.post-info {
+    margin: 0;
+}
